@@ -1,0 +1,24 @@
+@media print {
+body{
+    width: 594px;
+    display: flex;
+    justify-content:flex-start;
+    flex-wrap:wrap;
+}
+
+p{
+    color: blanchedalmond;
+}
+
+.maindiv{
+    background-color: black !important;
+    display: flex;
+    justify-content:space-around;
+    flex-direction: column;
+    height: 100px;
+    width: 295px;
+    align-items:center;
+    margin: 1px;
+}
+
+}
