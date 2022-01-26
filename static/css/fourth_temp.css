@@ -1,0 +1,29 @@
+@media print {
+    body{
+        width: 21cm;
+        display: flex;
+        justify-content:space-between;
+        flex-wrap:wrap;
+    }
+    
+    p{
+        color: white;
+    }
+    
+    .maindiv{
+        background-color: black !important;
+        display: flex;
+        justify-content:space-around;
+        flex-direction: column;
+        height: 6.3cm;
+        width: 6.5cm;
+        page-break-inside: avoid;
+    }
+    .hr-dashed {
+        margin: 20px 0;
+        padding: 0;
+        height: 0;
+        border: none;
+        border-top: 2px dashed #ddd;
+    }
+    }
