@@ -1,12 +1,19 @@
 from flask import Flask, request, render_template
 from patterns.first_pattern import FirstPattern
+from patterns.second_pattern import SecondPattern
+from patterns.third_pattern import ThirdPattern
+from patterns.fourth_pattern import FourthPattern
+
 
 
 # 
 class Class():
     # List of patterns name
     classes_list = {
-        'first_pattern': FirstPattern
+        'first_pattern': FirstPattern,
+        'second_pattern': SecondPattern,
+        'third_pattern': ThirdPattern,
+        'fourth_pattern': FourthPattern
     }
 
     def __init__(self, pattern_name, data):
