@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" media="print" href="{{url_for('static', filename='css/first_temp.css')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/second_temp.css')}}">
     </head>
     <body>
-        {% for item in data %}
-        <div class="maindiv">
-            <p>{{ item[0] }}</p>
-            <hr class="hr-dashed">
-            <p>{{ item[1] }}</p>
+        <div class="main">
+            {% for page in range(0, page_count) %}
+            <div class="a4">
+                {% for item in range(0, 15) %}
+                <div class="block">
+                    <div class="header"><p>Загнуть :)</p></div>
+                    <div class="hr"></div>
+                    <div class="footer">
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% endfor %}
         </div>
-        {% endfor %}
     </body>
 </html>

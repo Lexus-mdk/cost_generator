@@ -5,14 +5,9 @@ class FirstPattern():
     template = 'first_temp.html'
 
     def __init__(self, data):
-        # data = re.split('\r\n', data)
+        self.page_count = int(data)
 
-        data = [re.split(':', itm) for itm in re.split('\r\n', data)]
-        if data[-1][0] == '':
-            data.remove([''])
-
-        self.data = data
 
     def render_temp(self):
 
-        return render_template(self.template, data = self.data)
+        return render_template(self.template, page_count = self.page_count)

@@ -1,15 +1,32 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" media="print" href="{{url_for('static', filename='css/first_temp.css')}}">
+        <meta charset="UTF-8">
+        <meta name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/first_temp.css')}}">
     </head>
     <body>
-        {% for item in data %}
-        <div class="maindiv">
-            <p>{{ item[0] }}</p>
-            <hr class="hr-dashed">
-            <p>{{ item[1] }}</p>
+        <div class="main">
+            {% for page in range(0, page_count) %}
+            <div class="a4">
+                {% for item in range(0, 15) %}
+                <div class="block">
+                    <div class="header"><p>Загнуть :)</p></div>
+                    <div class="hr"></div>
+                    <div class="footer">
+                        <!-- <h1>{{ item[0] }}</h1>
+                        <h1>{{ item[1] }}</h1> -->
+                    </div>
+                    <!-- <p>{{ item[0] }}</p>
+                    <hr class="hr-dashed">
+                    <p>{{ item[1] }}</p> -->
+                </div>
+                {% endfor %}
+            </div>
+            {% endfor %}
         </div>
-        {% endfor %}
+        
     </body>
 </html>
