@@ -9,6 +9,7 @@
 }
 
 .main {
+    font-family: 'Muller';
     display: flex;
     justify-content: center;
     flex-direction: column;
